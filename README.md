@@ -1,2 +1,3 @@
 # test_project_stepik
-This's test project from Stepik
+This's the test project for Stepik
+https://stepik.org/course/575/info
