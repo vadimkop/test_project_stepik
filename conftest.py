@@ -8,7 +8,6 @@ def pytest_addoption(parser):
                      help="Choose language")
 
 
-
 @pytest.fixture(scope="function")
 def browser(request):
     print("\nstart browser for test..")

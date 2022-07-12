@@ -7,7 +7,7 @@ class BasketPage(BasePage):
         assert "basket" in self.browser.current_url, "Basket url is not presented"
 
     def should_be_empty_message_in_basket(self):
-        assert "Your basket is empty." in self.browser.find_element(*BasketPageLocators.BASKET_EMPTY_MESSAGES).text, "The basket isn't empty, but should be"
+        assert "Your basket is empty." in self.browser.find_element(*BasketPageLocators.BASKET_EMPTY_MESSAGES).text, "The basket isn't empty, but should be "
 
     def should_be_basket_without_products(self):
         assert self.is_not_element_present(*BasketPageLocators.BASKET_FULL), "The basket isn't empty, but should be"
