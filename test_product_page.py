@@ -35,6 +35,7 @@ def test_guest_cant_see_success_message(browser):
 def test_message_disappeared_after_adding_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/"
     page = ProductPage(browser, link)
+    browser.set_window_size(412, 915)
     page.open()
     page.should_be_add_to_basket()
     page.should_be_disappeared()
