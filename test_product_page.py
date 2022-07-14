@@ -40,7 +40,6 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page.should_be_disappeared()
 
 
-@pytest.mark.login
 class TestLoginFromProductPage:
 
     def test_guest_should_see_login_link_on_product_page(self, browser):
